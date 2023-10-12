@@ -1,0 +1,8 @@
+name: Demo CI\CD
+on: workflow_dispatch # zapuskaty u ruchnomu rezhymi
+jobs:
+  print_demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print to console
+        run: echo Hello GitH Actions
